@@ -1,0 +1,54 @@
+:root {
+  --main-color: rgb(2, 159, 170);
+  --minor-color: rgb(73, 198, 207);
+  --hard-color: rgb(2, 122, 131);
+  --active-font-color: white;
+}
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.display-flex {
+  display: flex;
+}
+.flex-intro {
+  width: 70vw;
+  flex-direction: column;
+  margin: auto;
+}
+.flex-intro > h1 {
+  font-size: 1.5em;
+}
+.flex-options > button {
+  padding: 10px 20px;
+  border: 1px solid var(--main-color);
+  text-transform: uppercase;
+}
+.flex-options > button:hover {
+  background-color: var(--minor-color);
+}
+.flex-options > button[active] {
+  background-color: var(--main-color);
+}
+.flex-options > button:hover,
+.flex-options > button[active] {
+  color: var(--active-font-color);
+}
+.flex-items-container {
+  height: 200px;
+  width: 100%;
+  min-width: 500px;
+  padding: 5px;
+  margin-top: 20px;
+  border: 1px solid var(--main-color);
+}
+.flex-display-item {
+  min-width: 2em;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--minor-color);
+  font-size: 1.4em;
+  color: var(--hard-color);
+}
